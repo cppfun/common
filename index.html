@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>cpp common by cppfun</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>cpp common</h1>
+        <h2>cpp common functions</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/cppfun/common/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/cppfun/common/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/cppfun/common" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="common" class="anchor" href="#common"><span class="octicon octicon-link"></span></a>common</h1>
+
+<p>Common fuctions you will use in C++,Most of them come from php.</p>
+
+<ul>
+<li>urlcode</li>
+<li>strtoupper &amp;&amp; strtolower</li>
+<li>split</li>
+<li>str_replace</li>
+<li>strip_tags</li>
+</ul><p>All this functions come from [<a href="http://cppfun.com">http://cppfun.com</a>] [1]</p>
+
+<h2>
+<a name="strip_tags" class="anchor" href="#strip_tags"><span class="octicon octicon-link"></span></a>strip_tags</h2>
+
+<div class="highlight highlight-cpp"><pre><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">strip_tags</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">html</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="str_replace" class="anchor" href="#str_replace"><span class="octicon octicon-link"></span></a>str_replace</h2>
+
+<div class="highlight highlight-cpp"><pre><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">str_replace</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">search</span><span class="p">,</span>
+                        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">replace</span><span class="p">,</span>
+                        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">subject</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="split" class="anchor" href="#split"><span class="octicon octicon-link"></span></a>split</h2>
+
+<div class="highlight highlight-cpp"><pre><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">split</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">str</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">c</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="strtoupper--strtolower" class="anchor" href="#strtoupper--strtolower"><span class="octicon octicon-link"></span></a>strtoupper &amp;&amp; strtolower</h2>
+
+<div class="highlight highlight-cpp"><pre><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">strtoupper</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">strtolower</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="urlcode" class="anchor" href="#urlcode"><span class="octicon octicon-link"></span></a>urlcode</h2>
+
+<div class="highlight highlight-cpp"><pre><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">urlencode</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">str</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">urldecode</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">str</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+
+<p><em>Free Software, heaven Yeah!</em>
+<em><a href="http://www.cppfun.com">http://www.cppfun.com</a></em></p>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("lktsepc@gmail.com");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
